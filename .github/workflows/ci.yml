@@ -33,6 +33,11 @@ jobs:
           sudo apt-get install -y cloc
           cloc src/ > cloc-report.txt
           cat cloc-report.txt
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       
       - name: Перевірка наявності схваленого код-рев'ю
         uses: actions/github-script@v6
