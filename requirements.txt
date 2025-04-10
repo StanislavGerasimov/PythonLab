@@ -5,6 +5,3 @@ pytest-cov>=2.0.0
 # Code Quality
 flake8>=4.0.0
 black>=22.0.0
-
-# Additional helpful tools
-cloc>=1.0.0
