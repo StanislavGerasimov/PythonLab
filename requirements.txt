@@ -6,9 +6,6 @@ pytest-cov>=2.0.0
 flake8>=4.0.0
 black>=22.0.0
 
-# Review Tools
-reviewdog>=0.14.0
-
 # SonarQube
 sonarqube>=0.7.0
 
